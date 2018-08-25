@@ -14,7 +14,7 @@ app.debug = 'DEBUG' in os.environ
 
 sockets = Sockets(app)
 
-website = 'custom.html'
+website = 'test.html'
 
 args = 'Blank_Screen'
 lastRefresh = 'Blank_Screen'
