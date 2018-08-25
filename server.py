@@ -32,38 +32,7 @@ def receive():##RETURNS TO SLACK NOT THE ACTUAL WEB PAGE
     #type = data.split(' ', 1)[0]
     #args = data.split(' ', 1)[1]
     app.logger.warning(u'Data: {}'.format(data))
-    '''
-    if type.upper() == 'CUSTOM':
-        #Custom text message(templates)
-        website = 'custom_two.html'
-        current = args
-        app.logger.warning(u'Selected Custom Template: {}'.format(args))
-        return ('Setting live display screen to custom message...', 200)
-    elif type.upper() == 'CUSTOM_PREVIEW':
-        #Custom text message(templates)
-        website = 'custom_two.html'
-        current = 'c' + args
-        app.logger.warning(u'Selected Custom Template2: {}'.format(args))
-        return ('Setting live display screen to preview message...', 200)
-    elif type.upper() == 'PRESET':
-        #Preset display screens(static)
-        if args.upper() == 'WELCOME':
-            #'Welcome to PicCollage or whatever'
-            website = 'welcome.html'
-            current = 'welcome'
-            app.logger.warning(u'Selected Welcome')
-            return ('Setting live display screen to preset welcome', 200)
-        elif args.upper() == 'ITS-A-SECRET':
-            website = 'yee.html'
-            current = 'secret'
-            return ('Oops! That\'s not a preset tempIate!', 200)
-        else:
-            return ('Oops! That\'s not a preset template!', 200)
-    else:
-        #User's input was strange
-        app.logger.warning(u'Some error occurred #1')
-        return ('Oops! That\'s not a message type! It should be either \'custom\' or \'preset\'.', 200)
-    '''
+    
     website = 'custom.html'
     current = data
     args = data
