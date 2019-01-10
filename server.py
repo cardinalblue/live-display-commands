@@ -60,4 +60,4 @@ def refresh():
         app.logger.warning(u'Returning refresh.')
         return ('refresh', 200)
     app.logger.warning(u'Returning keep.')
-    return ('keep', 200)#Usually would be keep but idk what happened debugging here
+    return ('keep', 200)#Usually would be keep 
