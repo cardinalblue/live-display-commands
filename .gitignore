@@ -1,0 +1,9 @@
+.idea
+
+*.pyc
+
+adsense.dat
+adexchangeseller.dat
+
+.env
+
